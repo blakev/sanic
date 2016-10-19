@@ -31,7 +31,7 @@ class Request:
     """
     __slots__ = (
         'url', 'headers', 'version', 'method',
-        'query_string', 'body',
+        'query_string', 'body', 'cookies',
         'parsed_json', 'parsed_args', 'parsed_form', 'parsed_files',
     )
 
@@ -52,6 +52,7 @@ class Request:
         self.parsed_form = None
         self.parsed_files = None
         self.parsed_args = None
+        self.cookies = None
 
     @property
     def json(self):

@@ -1,5 +1,6 @@
 import ujson
 
+
 COMMON_STATUS_CODES = {
     200: b'OK',
     400: b'Bad Request',
